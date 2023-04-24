@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
+//Please provide a Step By Step/WorkFlow of this contract?
+//How do we keep tract of Owner => Tokens?
+
 import "@openzeppelin/contracts@4.8.2/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts@4.8.2/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts@4.8.2/access/AccessControl.sol";
 
 contract CommunityToken is ERC20, ERC20Burnable, AccessControl {
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE"); //Why use keccak256 for the Minter Role?
     uint public numPay;
     string private business_name;
     address private business_address;
