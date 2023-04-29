@@ -23,4 +23,5 @@ The RegisterBusiness function allows a business to register itself by providing 
 
 The TransactTokens function is used to burn a specified amount of tokens from the business address that called it and transfer an equal amount of ETH to that same address. The function also checks whether the business has been registered and whether the tokens are ready to be used (i.e., whether numPay is equal to or greater than three).
 
-Overall, the CommunityToken contract is a basic ERC20 token with additional functionality to allow businesses to register themselves and use tokens to transact on the platform.
+Overall, the CommunityToken contract is a basic ERC20 token with additional functionality to allow businesses to register themselves and use tokens to transact on the platform.![Community Tokens](https://user-images.githubusercontent.com/105442161/235284181-4c9acb4a-3db6-4b99-9da2-51c9ce461aa3.png)
+
